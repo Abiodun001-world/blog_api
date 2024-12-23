@@ -2,7 +2,7 @@ const Blog = require("../models/Blog");
 
 exports.createBlog = async (req, res) => {
   try {
-    const blog = await Blog.create({ ...req.body, author: req.user.id });
+    const blog = await Blog.create({ ...req.body, author: req.user._id });
     res.status(201).json(blog);
   } catch (error) {
     res.status(400).json({ error: error.message });

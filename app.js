@@ -1,12 +1,14 @@
 const express = require("express");
 const authRoutes = require("./routes/authRoutes");
 const blogRoutes = require("./routes/blogRoutes");
+const errorHandler = require("./middlewares/errorMiddleware");
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use("/auth", authRoutes);
-app.use("/blogs", blogRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/blogs", blogRoutes);
+app.use(errorHandler);
 
 app.get("/", (req, res) => {
     res.end(
