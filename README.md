@@ -55,7 +55,7 @@ You can use tools like [Postman](https://www.postman.com/) or [Insomnia](https:/
 3. **Create a Blog**:
 
    - Endpoint: `POST /blogs`
-   - Body: `{ "title": "Blog Title", "description": "Details", "status": "draft/published" }`
+   - Body: `{ "author": "author name", title": "Blog Title", "description": "Details", "status": "draft/published" }`
    - Requires Auth: Yes (Include the token in the headers)
 
 4. **Get All Blogs**:
@@ -71,7 +71,7 @@ You can use tools like [Postman](https://www.postman.com/) or [Insomnia](https:/
 6. **Update a Blog by a blog id**:
 
    - Endpoint: `PUT /blogs/:id`
-   - Body: `{ "title": "Blog Title", "description": "Blog Description", "status": "draft/published" }`
+   - Body: `{ "author": "author name", title": "Blog Title", "description": "Blog Description", "status": "draft/published" }`
    - Requires Auth: Yes (Include the token in the headers)
 
 7. **Delete a Task**:
@@ -80,4 +80,4 @@ You can use tools like [Postman](https://www.postman.com/) or [Insomnia](https:/
 
 ### Hosting Link
 
-Access the live application [here]()
+Access the live application [here](https://blog-api-wkre.onrender.com)
