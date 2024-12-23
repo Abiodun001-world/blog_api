@@ -11,7 +11,7 @@ function connectDB() {
     console.log("Connected to MongoDB successfully");
   });
 
-  mongoose.conneection.on("error", (err) => {
+  mongoose.connection.on("error", (err) => {
     console.log("Error connecting to MongoDB", err);
   });
 }
