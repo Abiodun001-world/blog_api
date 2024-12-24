@@ -8,7 +8,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogRoutes);
-app.use(errorHandler);
 
 app.get("/", (req, res) => {
     res.end(
@@ -17,5 +16,7 @@ app.get("/", (req, res) => {
         "\n\nCheck out the GitHub repository of this project:https://github.com/Abiodun001-world/blog_api"
     );
 });
+// Error Handling Middleware
+app.use(errorHandler);
 
 module.exports = app;
