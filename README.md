@@ -40,7 +40,7 @@ JWT_SECRET=
 
 ### Testing the API
 
-You can use tools like [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) to test the API endpoints.
+You can use tools like [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) to test the API endpoints and you can access the APIs for this project below:[API endpoints](https://documenter.getpostman.com/view/28730642/2sAYJ4hzpz)
 
 1. **User Registration**:
 

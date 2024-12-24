@@ -13,7 +13,7 @@ app.use(errorHandler);
 app.get("/", (req, res) => {
     res.end(
         "Hi, You are welcome to Abiodun Adejare Adekunle's AltSchool second semester exam (project based) Thanks for checking it out!" +
-        "\n\nCheck out the Postman documentation: Postman Documentation: coming soon!" +
+        "\n\nCheck out the Postman documentation: Postman Documentation: https://documenter.getpostman.com/view/28730642/2sAYJ4hzpz" +
         "\n\nCheck out the GitHub repository of this project:https://github.com/Abiodun001-world/blog_api"
     );
 });

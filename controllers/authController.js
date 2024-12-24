@@ -12,8 +12,7 @@ const generateToken = (id) => {
 exports.signup = async (req, res) => {
   try {
     const user = await User.create(req.body);
-    const token = generateToken(user._id);  
-    res.status(201).json({ user, token });  
+    res.status(201).json({ message: "signup successfully", user });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -29,7 +28,7 @@ exports.signin = async (req, res) => {
     }
 
     const token = generateToken(user._id);  
-    res.status(200).json({ user, token });
+    res.status(200).json({message: "Signin Successfully", user, token });
   } catch (error) {
     res.status(500).json({ message: "Error during signin", error: error.message });
   }
