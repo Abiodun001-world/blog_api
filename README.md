@@ -24,10 +24,11 @@ This is a simple Blog API project.
 
 4. Create a `.env` file in the root directory:
 
-```
-PORT=
+```PORT=
 MONGO_URI=
 JWT_SECRET=
+JWT_EXPIRES_IN=
+NODE_ENV=
 ```
 
 ## Usage
