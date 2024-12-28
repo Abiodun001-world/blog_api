@@ -5,7 +5,13 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "test": "jest --coverage --runInBand --detectOpenHand --forceExit"
+    "test": "jest --detectOpenHandles --forceExit --runInBand"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["./jest.setup.js"],
+    "testEnvironment": "node",
+    "testTimeout": 60000,
+    "verbose": true
   },
   "keywords": [],
   "author": "Abiodun Adekunle",
@@ -21,6 +27,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.2",
     "nodemon": "^3.1.9",
     "supertest": "^7.0.0"
   }
