@@ -75,7 +75,7 @@ You can use tools like [Postman](https://www.postman.com/) or [Insomnia](https:/
    - Body: `{  "title": "Blog Title", "description": "Blog Description", "status": "draft/published" }`
    - Requires Auth: Yes (Include the token in the headers)
 
-7. **Delete a Task**:
+7. **Delete a Blog**:
    - Endpoint: `DELETE /blogs/:id`
    - Requires Auth: Yes (Include the token in the headers)
 
